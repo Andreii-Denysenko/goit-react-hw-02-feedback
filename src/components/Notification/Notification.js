@@ -1,3 +1,9 @@
-export function Notification() {
-    return <p>There is no feedback</p>;
+import PropTypes from 'prop-types';
+
+export function Notification({message}) {
+    return <p>{message}</p>;
+  }
+
+  Notification.propTypes = {
+    message: PropTypes.string.isRequired,
   }
